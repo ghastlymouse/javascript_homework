@@ -51,10 +51,12 @@ console.log("나이 많은 순:", copiedPeople);
 
 const user = {
   이름: "병수",
-  나이: 20,
+  나이: 20, // ?
   주소: "시골",
 };
 
-console.log("병수의 이름:", user["이름"]);
-console.log("병수의 나이:", user["나이"]);
-console.log("병수의 주소:", user["주소"]);
+const { 이름, 나이, 주소 } = user;
+
+console.log("병수의 이름:", 이름);
+console.log("병수의 나이:", 나이);
+console.log("병수의 주소:", 주소);
